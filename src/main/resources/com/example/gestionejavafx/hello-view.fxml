@@ -28,5 +28,10 @@
          <TextField fx:id="password" prefHeight="24.0" prefWidth="120.0" promptText="Password..." />
       </children>
    </HBox>
-    <Button onAction="#AccessoClick" text="Accedi" />
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="55.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#RegistratiClick" text="Registrati... " />
+          <Button onAction="#AccessoClick" text="Accedi" />
+      </children>
+   </HBox>
 </VBox>
