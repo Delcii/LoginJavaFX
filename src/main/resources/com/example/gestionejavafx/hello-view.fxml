@@ -25,8 +25,14 @@
    <HBox alignment="CENTER" prefHeight="20.0" prefWidth="200.0" spacing="15.0">
       <children>
          <Label text="Password:" />
-         <TextField fx:id="password" prefHeight="24.0" prefWidth="120.0" promptText="Password..." />
+         <PasswordField fx:id="password" prefHeight="24.0" prefWidth="120.0" promptText="Password..." />
       </children>
    </HBox>
     <Button onAction="#AccessoClick" text="Accedi" />
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+      <children>
+         <Label text="Non sei registrato?" />
+         <Button mnemonicParsing="false" onAction="#RegistratiClick" text="Registrati" />
+      </children>
+   </HBox>
 </VBox>
