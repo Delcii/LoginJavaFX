@@ -29,7 +29,7 @@ public class HelloController {
 
         boolean accesso = false;
         for (int i = 0; i < Database.accessi.size(); i++)
-            if(Objects.equals(Database.accessi.get(i).getUsername(), user.getText()) || Objects.equals(Database.accessi.get(i).getPassword(), password.getText())) {
+            if(Objects.equals(Database.accessi.get(i).getUsername(), user.getText()) && Objects.equals(Database.accessi.get(i).getPassword(), password.getText())) {
                 accesso = true;
             }
         if(accesso)
