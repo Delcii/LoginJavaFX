@@ -27,8 +27,23 @@
          <Label text="Password:" />
          <PasswordField fx:id="password" prefHeight="24.0" prefWidth="120.0" promptText="Password..." />
       </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
    </HBox>
-    <Button onAction="#AccessoClick" text="Accedi" />
+   <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0">
+      <children>
+          <Button onAction="#AccessoClick" text="Accedi" />
+         <Label fx:id="errore" textFill="RED">
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+      </children>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </VBox>
    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
       <children>
          <Label text="Non sei registrato?" />
